@@ -10,6 +10,7 @@ import { ReviewsService } from './reviews/reviews.service';
 import { ReviewsController } from './reviews/reviews.controller';
 import { ReviewsModule } from './reviews/reviews.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { SessionModule } from './session/session.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     MerchantsModule,
     PaymentsModule,
     ReviewsModule,
+    SessionModule,
   ],
   controllers: [AppController, ReviewsController],
   providers: [AppService, ReviewsService],

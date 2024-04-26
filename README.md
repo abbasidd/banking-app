@@ -75,3 +75,14 @@ Nest is [MIT licensed](LICENSE).
 ## Schema Diagram of the system:
 
 ![plot](./schemaDiagram.drawio.png)
+
+## DB Typorm:
+
+```bash
+# generate migration
+$ npx typeorm-ts-node-esm migration:generate -d src/ormconfig.js src/
+
+
+# run migration
+$ npx typeorm-ts-node-esm migration:run -d src/ormconfig.js
+```
